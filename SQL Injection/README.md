@@ -40,6 +40,10 @@ the syntax is correct and we get no error.
 its not a syntax error, its syntactical error.
 <img width="734" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ee8790ee-3f75-4be0-a5d0-27e0a695cb7b">
 
+its oracle db
+<img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/2e046c41-11aa-4da4-9d12-34861f377ff9">
+
+
 
 
 
