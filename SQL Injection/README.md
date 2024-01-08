@@ -1,6 +1,5 @@
 # SQL Injection --
 
-sqlmap -u "http://example.com/page.php?id=1" --batch
 
 **Database version**
 
