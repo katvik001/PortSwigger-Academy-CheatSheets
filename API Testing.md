@@ -48,3 +48,12 @@ Testing allowed methods: OPTIONS/TRACE/POST not allowed.
 
 <img width="737" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/be9ec54f-4ddf-4845-b06b-7ad59e5f7556">
 
+
+PATCH allowed but error:
+
+<img width="728" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/c08e2d9b-2140-4ad7-a6de-c254517f3dd5">
+
+
+Now we change content type but we get another error:
+
+<img width="740" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/7e966459-fd70-46b3-b196-fc07e3fc2c51">
