@@ -13,3 +13,8 @@ Add a field parameter with an invalid value to the request. Truncate the query s
 **&field=x#**
 
 <img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/9a8d339a-ede6-43a7-84f5-eb42dd6c9d0e">
+
+**This suggests that email is a valid field type. **
+username=administrator%26field=email%23
+
+<img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/98a5f964-8a82-4617-b546-0ce7e9e9700f">
