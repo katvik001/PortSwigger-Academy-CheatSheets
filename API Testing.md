@@ -18,3 +18,17 @@ Add a field parameter with an invalid value to the request. Truncate the query s
 username=administrator%26field=email%23
 
 <img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/98a5f964-8a82-4617-b546-0ce7e9e9700f">
+
+
+
+
+In Proxy > HTTP history, review the /static/js/forgotPassword.js JavaScript file. Notice the password reset endpoint, which refers to the reset_token parameter:
+
+/forgot-password?reset_token=${resetToken}
+
+In the Repeater tab, change the value of the field parameter from email to reset_token:
+
+username=administrator%26field=reset_token%23 
+
+<img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/5f797eb8-68d0-4832-ad38-055235b3021a">
+
