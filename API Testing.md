@@ -33,9 +33,14 @@ username=administrator%26field=reset_token%23
 <img width="743" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/5f797eb8-68d0-4832-ad38-055235b3021a">
 
 
+
+
 **Finding and exploiting an unused API endpoint**
-Testing allowed methods: OPTIONS/TRACE
+
+Testing allowed methods: OPTIONS/TRACE/POST not allowed.
 <img width="741" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/c0e0706d-b87f-4a00-b7c6-2b5b64e25b39">
 
 <img width="739" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/cff7cc34-d478-4cf3-839d-85525c8f7e59">
+
+<img width="737" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/be9ec54f-4ddf-4845-b06b-7ad59e5f7556">
 
