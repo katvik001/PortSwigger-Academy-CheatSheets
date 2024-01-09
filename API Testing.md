@@ -38,6 +38,7 @@ username=administrator%26field=reset_token%23
 
 
 ============================================================================
+
 **Finding and exploiting an unused API endpoint**
 
 Testing allowed methods: OPTIONS/TRACE/POST not allowed.
