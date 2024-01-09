@@ -57,3 +57,12 @@ PATCH allowed but error:
 Now we change content type but we get another error:
 
 <img width="740" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/7e966459-fd70-46b3-b196-fc07e3fc2c51">
+
+Add an empty JSON object {} as the request body:
+
+<img width="742" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/ab0b4e2e-8284-4412-acb6-18b0fdfe9c9e">
+
+Add a price parameter with a value of 0 to the JSON object {"price":0}:
+
+<img width="745" alt="image" src="https://github.com/katvik001/PortSwigger-Academy-CheatSheets/assets/21978067/6395325c-7dc7-469a-8527-03296604ae74">
+
